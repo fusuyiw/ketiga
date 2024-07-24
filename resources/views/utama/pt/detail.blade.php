@@ -37,7 +37,7 @@
                             @if (!empty($detail->web))
                                 <th scope="row">Web Resmi</th>
                                 <td>
-                                    <p><a href="https://{{ $detail->web }}" target="blank"
+                                    <p><a href="{{ $detail->web }}" target="blank"
                                             class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
                                             {{ $detail->web }}</a></p>
                                 </td>

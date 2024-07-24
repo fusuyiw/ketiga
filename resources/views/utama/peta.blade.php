@@ -116,7 +116,7 @@
         @endforeach
 
         // GeoJSON Layers
-        var geoLayer_blimbing = L.geoJson.ajax("storage/geojson_kecamatan/Blimbing.geojson", {
+        var geoLayer_blimbing = L.geoJson.ajax("geojson/Blimbing.geojson", {
             style: {
                 color: "#ff3d33",
                 weight: 3,
@@ -150,7 +150,7 @@
             }
         }).addTo(map);
 
-        var geoLayer_kedungkandang = L.geoJson.ajax("storage/geojson_kecamatan/Kedungkandang.geojson", {
+        var geoLayer_kedungkandang = L.geoJson.ajax("geojson/Kedungkandang.geojson", {
             style: {
                 color: "#99ff33",
                 weight: 3,
@@ -184,7 +184,7 @@
             }
         }).addTo(map);
 
-        var geoLayer_Sukun = L.geoJson.ajax("storage/geojson_kecamatan/Sukun.geojson", {
+        var geoLayer_Sukun = L.geoJson.ajax("geojson/Sukun.geojson", {
             style: {
                 color: "#3385ff",
                 weight: 3,
@@ -218,7 +218,7 @@
             }
         }).addTo(map);
 
-        var geoLayer_Lowokwaru = L.geoJson.ajax("storage/geojson_kecamatan/Lowokwaru.geojson", {
+        var geoLayer_Lowokwaru = L.geoJson.ajax("geojson/Lowokwaru.geojson", {
             style: {
                 color: "#c300ff",
                 weight: 3,
@@ -252,7 +252,7 @@
             }
         }).addTo(map);
 
-        var geoLayer_Klojen = L.geoJson.ajax("storage/geojson_kecamatan/Klojen.geojson", {
+        var geoLayer_Klojen = L.geoJson.ajax("geojson/Klojen.geojson", {
             style: {
                 color: "#ffe733",
                 weight: 3,

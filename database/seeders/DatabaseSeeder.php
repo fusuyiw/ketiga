@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
             CategorySeeder::class,
             KecamatanSeeder::class,
             KelurahanSeeder::class,
-            FacilitySeeder::class,
+            // FacilitySeeder::class,
             UserSeeder::class
         ]);
     }
