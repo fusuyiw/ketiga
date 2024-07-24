@@ -1,0 +1,90 @@
+/* Atur kontainer gambar menggunakan Flexbox */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    /* Agar gambar bisa berbaris pada baris berikutnya jika diperlukan */
+}
+
+/* Gambar dalam kartu */
+.card {
+    display: flex;
+    justify-content: center;
+    /* Memastikan gambar terpusat di dalam kolom */
+    flex: 1 1 25%;
+    /* Mengatur gambar agar mengisi 25% dari kontainer dengan proporsi fleksibel */
+    margin: 0;
+    /* Menghilangkan margin default */
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    /* Menghindari ruang kosong di bawah gambar */
+    margin: 0;
+    /* Menghilangkan margin default pada gambar */
+}
+
+@media (max-width: 576px) {
+    .card {
+        display: flex;
+        flex-wrap: nowrap;
+        /* Pastikan gambar tidak melompat ke baris baru */
+        justify-content: center;
+        align-items: center;
+        /* Atur tata letak gambar secara horizontal di dalam kolom */
+        width: 50%;
+        margin: 0;
+    }
+
+    .card img {
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+        /* Pastikan gambar tidak melebihi lebar kontainer */
+    }
+}
+
+.modal-content {
+    border-radius: 15px;
+    box-shadow: 0 5px 15px #0394fc;
+    overflow: hidden;
+}
+
+.modal-header,
+.modal-footer {
+    background: #bde7fc;
+    border: none;
+}
+
+.modal-header {
+    border-bottom: none;
+    position: relative;
+}
+
+.close-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.close-btn i {
+    color: #fff;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+.modal.fade .modal-dialog {
+    transform: translateY(-100px);
+    transition: transform 0.3s ease-out;
+}
+
+.modal.show .modal-dialog {
+    transform: translateY(0);
+}

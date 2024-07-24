@@ -1,0 +1,19 @@
+/* weather-wind-plugin.css */
+.weather-wind-control {
+    position: absolute;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.weather-wind-control img {
+    width: 30px;
+    height: 30px;
+}
+
+.weather-wind-control.active {
+    background: #f0f0f0;
+}

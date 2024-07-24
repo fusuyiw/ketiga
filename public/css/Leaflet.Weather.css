@@ -1,0 +1,84 @@
+/* Leaflet Weather Control */
+.leaflet-control-weather {
+    color: #000; /* Warna teks */
+    font-weight: bold;
+    background: #fff; /* Latar belakang putih */
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(66, 133, 244, 0.7); /* Efek lampu biru */
+    font-size: 1.34em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Transisi saat diperbesar */
+}
+
+.leaflet-control-weather:hover {
+    transform: scale(1.05); /* Perbesar saat hover */
+}
+
+/* Ikon cuaca */
+.leaflet-control-weather .weatherIcon {
+    border: 2px solid #fff;
+    font-size: 1.5em;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-right: 5px;
+    border-radius: 50%;
+    background: #4285f4; /* Latar belakang ikon biru */
+}
+
+/* Gambar di dalam ikon cuaca */
+.leaflet-control-weather .weatherIcon img {
+    max-width: 100% !important;
+}
+
+/* Informasi cuaca lengkap */
+.leaflet-control-weather.expanded {
+    width: 180px; /* Lebar lebih ngepres */
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    height: auto;
+}
+
+.leaflet-control-weather.expanded .weatherIcon {
+    font-size: 2em; /* Ukuran ikon diperbesar saat diklik */
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+/* Menata div di dalam widget cuaca */
+.leaflet-control-weather.expanded div {
+    margin: 4px 0;
+    font-size: 1.1em; /* Ukuran font lebih besar saat diperluas */
+}
+
+/* Container informasi cuaca */
+.weather-info-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 9999;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 240px;
+    backdrop-filter: blur(10px);
+}
+
+/* Penataan teks dalam container cuaca */
+.weather-info-container div {
+    margin-bottom: 4px;
+}
+
+/* Margin antara elemen dalam container */
+.weather-info-container div + div {
+    margin-top: 4px;
+}
