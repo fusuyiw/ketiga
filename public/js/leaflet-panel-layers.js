@@ -20,7 +20,7 @@
             compactOffset: 0,
             collapsed: false,
             autoZIndex: true,
-            collapsibleGroups: false,
+            collapsibleGroups: true,
             selectorGroup: false, //select all layer of a group
             buildItem: null, //function that return row item html node(or html string)
             title: "", //title of panel
